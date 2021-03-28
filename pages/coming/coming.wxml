@@ -1,0 +1,2 @@
+<!--pages/coming/coming.wxml-->
+<Tabs tabs="{{tabs}}" binditemChanged="handleItemChanged"></Tabs>

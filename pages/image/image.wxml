@@ -1,0 +1,19 @@
+<!--pages/image/image.wxml-->
+<view class='calc'></view>
+  <!-- 图片不保持原始高宽比，高宽填充 -->
+  <image mode="scaleFill" src="https://wx4.sinaimg.cn/mw690/6fd958d7gy1fq0ug7lbvvj20hs08w43v.jpg"></image>
+  <!-- 图片保持原始高宽比，长边填充 -->
+  <image mode="aspectFit" src="https://wx4.sinaimg.cn/mw690/6fd958d7gy1fq0ug7lbvvj20hs08w43v.jpg"></image>
+  <!-- 图片保持原始高宽比，短边填充 -->
+  <image mode="aspectFill" src="https://wx4.sinaimg.cn/mw690/6fd958d7gy1fq0ug7lbvvj20hs08w43v.jpg"></image>
+  <!-- 图片保持原始高宽比，宽度填充，image 标签的高度按图片比例调整 -->
+  <image mode="widthFix" src="https://wx4.sinaimg.cn/mw690/6fd958d7gy1fq0ug7lbvvj20hs08w43v.jpg"></image>
+  <swiper autoplay="true" indicator-dots="true" interval="3000" circular="true">
+    <swiper-item><image mode="widthFix" src="//img.alicdn.com/imgextra/i1/2206686532409/O1CN01zROTni1TfMmrmiYkv_!!2206686532409-0-lubanimage.jpg"></image></swiper-item>
+    <swiper-item><image mode="widthFix" src="//img.alicdn.com/imgextra/i2/109/O1CN014DSINX1Cfxpws5Hpr_!!109-0-luban.jpg"></image></swiper-item>
+    <swiper-item><image mode="widthFix" src="//img.alicdn.com/imgextra/i1/2206686532409/O1CN01sWe7pE1TfMmv8YIBH_!!2206686532409-0-lubanimage.jpg"></image></swiper-item>
+  </swiper>
+  <!-- open-type: switchTab 跳转到 tabbar 页面，关闭其他 -->
+  <navigator url="/pages/coming/coming" open-type="switchTab">跳转到 即将上映（关闭其他）</navigator>
+  <!-- open-type: reLaunch 跳转到任意页面，关闭其他所有 -->
+  <navigator url="/pages/logs/logs" open-type="reLaunch">跳转到 日志（关闭其他所有）</navigator>

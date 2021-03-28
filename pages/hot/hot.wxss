@@ -1,0 +1,11 @@
+/* pages/hot/hot.wxss */
+
+.active {
+  color: #268DCD;
+}
+image {
+  width: 320px;
+  height: 320px;
+}
+/* 引入样式只能写相对路径 */
+@import '../../styles/common.wxss'

@@ -1,0 +1,6 @@
+<!--pages/radio/radio.wxml-->
+<radio-group bindchange="handleChange">
+  <radio value="male" checked color="#268DCD">男</radio>
+  <radio value="female">女</radio>
+</radio-group>
+<view> 选中的值为：{{gender}}</view>

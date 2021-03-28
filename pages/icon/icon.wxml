@@ -1,0 +1,14 @@
+<!--pages/icon/icon.wxml-->
+<!-- type: success|success_no_circle|info|warn|waiting|cancel|download|search|clear -->
+<icon type="success"></icon>
+<icon type="success_no_circle"></icon>
+<icon type="info"></icon>
+<icon type="warn"></icon>
+<icon type="waiting"></icon>
+<icon type="cancel"></icon>
+<icon type="download"></icon>
+<icon type="search"></icon>
+<icon type="clear"></icon>
+<view>
+  <icon type="clear" size="60" color="#268DCD"></icon>
+</view>

@@ -1,0 +1,2 @@
+<!--pages/richtext/richtext.wxml-->
+<rich-text nodes="{{html}}"></rich-text>

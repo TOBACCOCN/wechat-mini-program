@@ -1,0 +1,40 @@
+<!--pages/hot/hot.wxml-->
+<!-- text 相当于 html 中的 span -->
+<text selectable="true" decode="true">pages/hot/hot.wxml&nbsp;pages/hot/hot.wxml</text>
+<!-- view 相当于 html 中的 div -->
+<view wx:if="{{show}}">
+  <!-- 默认按住 50ms 后出现点击态，手指松开 400ms 后点击态才消失 -->
+  <view hover-class="active" hover-start-time="50" hover-stay-time="400">{{msg}}</view>
+  <view>{{num}}</view>
+  <view>{{person.name}}</view>
+  <view>{{person.age}}</view>
+  <view data-num="{{num}}">自定义属性</view>
+  <view>
+    <checkbox checked="true">已婚</checkbox>
+  </view>
+  <!-- wx:for-item 和 wx:for-index 属性可以省略 -->
+  <view wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key='item'>
+    <view>{{index}} {{item}}</view>
+  </view>
+  <view wx:for="{{person}}" wx:for-item="value" wx:for-index="key" wx:key="name">
+    <view>{{key}}: {{value}}</view>
+  </view>
+  <block>block 标签会被移除</block>
+  <view wx:if="{{show}}"> wx:if attr indicates this element world be added or removed</view>
+  <view hidden>This would be hidden</view>
+  <view hidden="{{!show}}">hidden attr indicats it world be shown or not by adding style</view>
+  <input type="text" bindinput="handleInput"/>
+  <button bindtap="handleTap" data-opration='{{1}}' size="mini">+</button>
+  <button bindtap="handleTap" data-opration="{{-1}}" size="mini">-</button>
+
+  <!-- open-type：navigate 默认值，保留当前页面，但是不能跳转到 tabbar 页面 -->
+  <navigator url="/pages/coming/coming">无法跳转到 即将上映</navigator>
+  <!-- open-type：redirect 关闭当前页面，跳转到应用内页面，但是不能跳转到 tabbar 页面 -->
+  <navigator url="/pages/logs/logs" open-type="redirect">跳转到日志（关闭当前页）</navigator>
+  <navigator url="/pages/image/image">跳转到图片页</navigator>
+  <navigator url="/pages/button/button">跳转到按钮页</navigator>
+  <navigator url="/pages/richtext/richtext">跳转到富文本页</navigator>
+  <navigator url="/pages/icon/icon">跳转到 icon 页</navigator>
+  <navigator url="/pages/radio/radio">跳转到单选页</navigator>
+  <navigator url="/pages/checkbox/checkbox">跳转到多选页</navigator>
+</view>

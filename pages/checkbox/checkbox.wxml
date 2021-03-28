@@ -1,0 +1,6 @@
+<!--pages/checkbox/checkbox.wxml-->
+<checkbox-group>
+  <checkbox value="banana" checked="true">香蕉</checkbox>
+  <checkbox value="apple">苹果</checkbox>
+  <checkbox value="orange">橙子</checkbox>
+</checkbox-group>
