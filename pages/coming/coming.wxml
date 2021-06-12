@@ -1,2 +1,7 @@
 <!--pages/coming/coming.wxml-->
-<Tabs tabs="{{tabs}}" binditemChanged="handleItemChanged"></Tabs>
+<Tabs tabs="{{tabs}}" binditemChanged="handleItemChanged">
+  <view wx:if="{{tabs[0].isActive}}">首页内容</view>
+  <view wx:elif="{{tabs[1].isActive}}">原创内容</view>
+  <view wx:elif="{{tabs[2].isActive}}">分类内容</view>
+  <view wx:elif="{{tabs[3].isActive}}">关于内容</view>
+</Tabs>

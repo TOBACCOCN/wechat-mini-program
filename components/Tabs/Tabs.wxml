@@ -3,4 +3,8 @@
   <view class='tabs_title'>
     <view wx:for="{{tabs}}" wx:key="id" class="tabs_item {{item.isActive ? 'active' : ''}}" bindtap="handleItemTap" data-index="{{index}}">{{item.name}}</view>
   </view>
+  <view class="content">
+    <!-- slot 占位符，可以将父组件中的标签内包含的内容显示 -->
+    <slot></slot>
+  </view>
 </view>

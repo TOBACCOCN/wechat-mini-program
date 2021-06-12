@@ -8,8 +8,7 @@
     "pages/icon/icon",
     "pages/radio/radio",
     "pages/checkbox/checkbox",
-    "pages/logs/logs",
-    "components/Tabs"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "dark",

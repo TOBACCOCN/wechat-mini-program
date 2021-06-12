@@ -13,6 +13,7 @@ Page({
     persons:[{name: '唐僧', apge: 28}, {name: '孙悟空', apge: 500}, {name: '猪八戒', apge: 300}, {name: '沙和尚', apge: 200}]
   },
 
+  // :function() 可以省略
   handleInput:function(e) {
     console.log(e)
     this.setData({num:e.detail.value})
